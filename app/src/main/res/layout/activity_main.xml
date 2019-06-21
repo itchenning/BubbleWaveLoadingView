@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <com.terry.bubblewaveloadingview.view.BubbleWaveLoadingView
+        android:id="@+id/bubblewaveloadingview"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:wb_boder_width="6dp" />

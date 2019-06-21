@@ -15,7 +15,10 @@
 
 # 用法
 
+## xml中：
+
 	<com.terry.bubblewaveloadingview.view.BubbleWaveLoadingView
+		android:id="@+id/bubblewaveloadingview"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:wb_amplitude="60"
@@ -30,6 +33,12 @@
         app:wb_first_wave_color="#0000FF"
         app:wb_progress="60"
         app:wb_second_wave_color="#550000FF" />
+
+## 代码中：
+
+	   BubbleWaveLoadingView bubbleWaveLoadingView = findViewById(R.id.bubblewaveloadingview);
+        bubbleWaveLoadingView.setProgress(80);
+
 
 
 # 属性介绍
