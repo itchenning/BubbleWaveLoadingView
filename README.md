@@ -18,7 +18,7 @@
 ## xml中：
 
 	<com.terry.bubblewaveloadingview.view.BubbleWaveLoadingView
-		android:id="@+id/bubblewaveloadingview"
+	    android:id="@+id/bubblewaveloadingview"
 	    android:layout_width="150dp"
 	    android:layout_height="150dp"
 	    app:wb_amplitude="60"
