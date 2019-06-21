@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BubbleWaveLoadingView">
+        <attr name="wb_bg_color" format="color" />
+        <attr name="wb_border_color" format="color" />
+        <attr name="wb_first_wave_color" format="color" />
+        <attr name="wb_second_wave_color" format="color" />
+        <attr name="wb_bubble_color" format="color" />
+
+        <attr name="wb_boder_width" format="dimension" />
+        <attr name="wb_bubble_max_radius" format="dimension" />
+        <attr name="wb_bubble_min_radius" format="dimension" />
+        <attr name="wb_bubble_max_size" format="integer" />
+        <attr name="wb_bubble_max_speed_y" format="integer" />
+        <attr name="wb_progress" format="integer" />
+        <attr name="wb_amplitude" format="float" />
+    </declare-styleable>
+</resources>
