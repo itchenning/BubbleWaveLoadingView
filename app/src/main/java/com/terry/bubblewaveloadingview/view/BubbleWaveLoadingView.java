@@ -35,7 +35,6 @@ public class BubbleWaveLoadingView extends View {
     private static final float DEFAULT_WAVE_LENGTH_RATIO = 1.0f;
     private static final float DEFAULT_AMPLITUDE_RATIO = 0.1f;
     private static final float DEFAULT_WATER_LEVEL_RATIO = 0.5f;
-    private static final float DEFAULT_AMPLITUDE_VALUE = 50.0f;
 
     private Context mContext;
     private int mWidth;
@@ -129,14 +128,14 @@ public class BubbleWaveLoadingView extends View {
         mSecondWaveColor = attributes.getColor(R.styleable.BubbleWaveLoadingView_wb_second_wave_color, Color.parseColor("#66266DFF"));
         mBubbleColor = attributes.getColor(R.styleable.BubbleWaveLoadingView_wb_bubble_color, Color.parseColor("#33FFFFFF"));
 
-        mBorderWidth = attributes.getDimension(R.styleable.BubbleWaveLoadingView_wb_boder_width, 18);
-        mBubbleMaxRadius = attributes.getDimension(R.styleable.BubbleWaveLoadingView_wb_bubble_max_radius, 30);
-        mBubbleMinRadius = attributes.getDimension(R.styleable.BubbleWaveLoadingView_wb_bubble_min_radius, 5);
+        mBorderWidth = attributes.getDimension(R.styleable.BubbleWaveLoadingView_wb_boder_width, dip2px(6));
+        mBubbleMaxRadius = attributes.getDimension(R.styleable.BubbleWaveLoadingView_wb_bubble_max_radius, dip2px(10));
+        mBubbleMinRadius = attributes.getDimension(R.styleable.BubbleWaveLoadingView_wb_bubble_min_radius, dip2px(2));
         mBubbleMaxSize = attributes.getInteger(R.styleable.BubbleWaveLoadingView_wb_bubble_max_size, 30);
         mBunbleMaxSpeedY = attributes.getInteger(R.styleable.BubbleWaveLoadingView_wb_bubble_max_speed_y, 3);
-        mProgress = attributes.getInteger(R.styleable.BubbleWaveLoadingView_wb_progress, 62);
+        mProgress = attributes.getInteger(R.styleable.BubbleWaveLoadingView_wb_progress, 60);
 
-        float amplitudeRatioAttr = attributes.getFloat(R.styleable.BubbleWaveLoadingView_wb_amplitude, DEFAULT_AMPLITUDE_VALUE) / 1000;
+        float amplitudeRatioAttr = attributes.getFloat(R.styleable.BubbleWaveLoadingView_wb_amplitude, 50f) / 1000;
         mAmplitudeRatio = (amplitudeRatioAttr > DEFAULT_AMPLITUDE_RATIO) ? DEFAULT_AMPLITUDE_RATIO : amplitudeRatioAttr;
         attributes.recycle();
         initPaints();
@@ -144,6 +143,10 @@ public class BubbleWaveLoadingView extends View {
         initWaveAnimation();
         createWaveShader();
         setProgress(mProgress);
+    }
+
+    private float dip2px(float dpValue) {
+        return dpValue * (mContext.getResources().getDisplayMetrics().density) + 0.5f;
     }
 
     private void initOtherVariates() {
