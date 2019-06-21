@@ -19,25 +19,25 @@
 
 	<com.terry.bubblewaveloadingview.view.BubbleWaveLoadingView
 		android:id="@+id/bubblewaveloadingview"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:wb_amplitude="60"
-        app:wb_bg_color="#FFFFFF"
-        app:wb_boder_width="3dp"
-        app:wb_border_color="#66C309F3"
-        app:wb_bubble_color="#33FFFFFF"
-        app:wb_bubble_max_radius="10dp"
-        app:wb_bubble_max_size="30"
-        app:wb_bubble_max_speed_y="5"
-        app:wb_bubble_min_radius="3dp"
-        app:wb_first_wave_color="#0000FF"
-        app:wb_progress="60"
-        app:wb_second_wave_color="#550000FF" />
+	    android:layout_width="150dp"
+	    android:layout_height="150dp"
+	    app:wb_amplitude="60"
+	    app:wb_bg_color="#FFFFFF"
+	    app:wb_boder_width="3dp"
+	    app:wb_border_color="#66C309F3"
+	    app:wb_bubble_color="#33FFFFFF"
+	    app:wb_bubble_max_radius="10dp"
+	    app:wb_bubble_max_size="30"
+	    app:wb_bubble_max_speed_y="5"
+	    app:wb_bubble_min_radius="3dp"
+	    app:wb_first_wave_color="#0000FF"
+	    app:wb_progress="60"
+	    app:wb_second_wave_color="#550000FF" />
 
 ## 代码中：
 
-	   BubbleWaveLoadingView bubbleWaveLoadingView = findViewById(R.id.bubblewaveloadingview);
-        bubbleWaveLoadingView.setProgress(80);
+	BubbleWaveLoadingView bubbleWaveLoadingView = findViewById(R.id.bubblewaveloadingview);
+    bubbleWaveLoadingView.setProgress(80);
 
 
 
