@@ -1,3 +1,37 @@
+# 一个带有气泡效果的水波纹加载进度条
+---
+
+## 基于以下两个项目修改，感谢两位作者
+
+[WaveLoadingView](https://github.com/tangqi92/WaveLoadingView)
+
+[雕虫晓技(十) Android超简单气泡效果](https://www.gcssloop.com/gebug/bubble-sample)
+
+
+# 效果
+
+![](screenshot.gif)
+
+
+# 用法
+
+	<com.terry.bubblewaveloadingview.view.BubbleWaveLoadingView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:wb_amplitude="60"
+        app:wb_bg_color="#FFFFFF"
+        app:wb_boder_width="3dp"
+        app:wb_border_color="#66C309F3"
+        app:wb_bubble_color="#33FFFFFF"
+        app:wb_bubble_max_radius="10dp"
+        app:wb_bubble_max_size="30"
+        app:wb_bubble_max_speed_y="5"
+        app:wb_bubble_min_radius="3dp"
+        app:wb_first_wave_color="#0000FF"
+        app:wb_progress="60"
+        app:wb_second_wave_color="#550000FF" />
+
+
 # 属性介绍
 
 <table>
@@ -78,7 +112,7 @@ wb_boder_width
 <td>
 外边框宽
 </td>
-<td>
+<td align="center">
 6dp
 </td>
 </tr>
@@ -89,7 +123,7 @@ wb_bubble_max_radius
 <td>
 气泡最大半径
 </td>
-<td>
+<td align="center">
 10dp
 </td>
 </tr>
@@ -100,7 +134,7 @@ wb_bubble_min_radius
 <td>
 气泡最小半径
 </td>
-<td>
+<td align="center">
 2dp
 </td>
 </tr>
@@ -111,7 +145,7 @@ wb_bubble_max_size
 <td>
 气泡最大数量
 </td>
-<td>
+<td align="center">
 30
 </td>
 </tr>
@@ -122,7 +156,7 @@ wb_bubble_max_speed_y
 <td>
 气泡上升最大速度
 </td>
-<td>
+<td align="center">
 3
 </td>
 </tr>
@@ -133,7 +167,7 @@ wb_progress
 <td>
 进度
 </td>
-<td>
+<td align="center">
 60
 </td>
 </tr>
@@ -144,40 +178,8 @@ wb_amplitude
 <td>
 水波振幅
 </td>
-<td>
+<td align="center">
 50f
 </td>
 </tr>
 </table>
-
-# 一个带有气泡效果的水波纹加载进度条
-
-###基于以下两个项目修改，感谢两位作者
-
-[WaveLoadingView](https://github.com/tangqi92/WaveLoadingView)
-
-[雕虫晓技(十) Android超简单气泡效果](https://www.gcssloop.com/gebug/bubble-sample)
-
-
-# 效果
-
-![](screenshot.gif)
-
-
-# 用法
-
-	<com.terry.bubblewaveloadingview.view.BubbleWaveLoadingView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:wb_amplitude="60"
-        app:wb_bg_color="#FFFFFF"
-        app:wb_boder_width="3dp"
-        app:wb_border_color="#66C309F3"
-        app:wb_bubble_color="#33FFFFFF"
-        app:wb_bubble_max_radius="10dp"
-        app:wb_bubble_max_size="30"
-        app:wb_bubble_max_speed_y="5"
-        app:wb_bubble_min_radius="3dp"
-        app:wb_first_wave_color="#0000FF"
-        app:wb_progress="60"
-        app:wb_second_wave_color="#550000FF" />
