@@ -45,17 +45,17 @@
 
 <table>
 <tr>
-<td>
+<td align="left">
 <b>
 属性名
 </b> 
 </td>
-<td>
+<td align="left">
 <b>
 描述
 </b> 
 </td>
-<td>
+<td align="center">
 <b>
 默认值
 </b> 
