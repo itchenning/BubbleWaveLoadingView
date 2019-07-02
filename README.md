@@ -18,7 +18,7 @@
 ## xml中：
 
 	<com.terry.bubblewaveloadingview.view.BubbleWaveLoadingView
-		android:id="@+id/bubblewaveloadingview"
+	    android:id="@+id/bubblewaveloadingview"
 	    android:layout_width="150dp"
 	    android:layout_height="150dp"
 	    app:wb_amplitude="60"
@@ -45,17 +45,17 @@
 
 <table>
 <tr>
-<td>
+<td align="left">
 <b>
 属性名
 </b> 
 </td>
-<td>
+<td align="left">
 <b>
 描述
 </b> 
 </td>
-<td>
+<td align="center">
 <b>
 默认值
 </b> 
